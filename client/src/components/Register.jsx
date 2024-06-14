@@ -29,7 +29,7 @@ function Register({ isAuthenticated, setIsAuthenticated }) {
     formData.append("password", password);
     formData.append("avatar", avatar);
     await axios
-      .post("http://localhost:4000/api/v1/user/register", formData, {
+      .post("https://task-server-ebon-beta.vercel.app/api/v1/user/register", formData, {
         withCredentials: true,
         headers: { "Content-Type": "multipart/form-data" },
       })

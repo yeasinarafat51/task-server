@@ -16,7 +16,7 @@ const CreateTaskModal = ({
   const handleCreateTask = async () => {
     await axios
       .post(
-        "http://localhost:4000/api/v1/task/post",
+        "https://task-server-ebon-beta.vercel.app/api/v1/task/post",
         { title, description },
         {
           withCredentials: true,
