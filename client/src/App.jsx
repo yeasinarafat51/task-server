@@ -52,7 +52,7 @@ const App = () => {
               />
             }
           />
-          <Route
+          {/* <Route
             path="/register"
             element={
               <Register
@@ -69,7 +69,7 @@ const App = () => {
                 // setIsAuthenticated={setIsAuthenticated}
               />
             }
-          />
+          /> */}
           <Route
             path="/profile"
             element={<Profile user={user} isAuthenticated={isAuthenticated} />}
